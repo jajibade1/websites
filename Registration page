@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="uft-8">
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<title>Registration</title>
+
+<ul id="menu">
+<li><a href="C:\Users\john\Documents\HTML\Home.html"> Home </a></li> 
+<li><a href="C:\Users\john\Documents\HTML\registration.html"> Registration Form </a></li>  
+<li><a href="C:\Users\john\Documents\HTML\secondpage.html"> HTML with CSS </a></li>  
+<li><a href="C:\Users\john\Documents\HTML\thirdpage.html"> HTML with CSS and Javascript </a></li>  
+</ul>
+
+
+</head>
+
+<h1 align:center> Registration Form </h1>
+
+<p> Please Register details below and a member of our team will contact you shortly! </p>
+
+<body>
+<form>
+<fieldset>
+<table width="100%">
+<tr>
+<td width="50%" align="right">Name: </td>
+<td width="50%" align="left"><input type="text"> </p></td>
+</tr>
+
+<tr>
+<td width="50%" align="right">Surname:</td>
+<td width="50%" align="left"><input type="password"> </p></td>
+</tr>
+
+<tr>
+<td width="50%" align="right">Gender:</td>
+<td width="50%" align="left"><input type="radio" name="G" /> Male <input type="radio" name ="G"/> Female </td>
+</tr>
+
+<tr>
+<td width="50%" align="right">Address:</td>
+<td width="50%" align="left"><textarea rows="6"></textarea></td>
+</tr>
+
+<tr>
+<td width="50%" align="right">Qualification:</td>
+<td width="50%" align="left"><select>
+<option> Select </option>
+<option value="1">BTEC</option>
+<option value="2">BSc</option>
+<option value="3">BSc(Hons)</option>
+<option value="4">MSc</option>
+<option value="5">Diploma</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td width="50%" align="right">Skills:</td>
+<td width="50%" align="left"><select multiple="multiple">
+<option> Select </option>
+<option value="1">Asp.net</option>
+<option value="2">C</option>
+<option value="3">C++</option>
+<option value="4">C#</option>
+<option value="5">Java</option>
+<option value="5">HTML</option>
+<option value="5">CSS</option>
+</select>
+</tr>
+
+<tr>
+<td width="50%" align="right">Resume:</td>
+<td width="50%" align="left"><input type="file"></td>
+</tr>
+
+<tr>
+<td width="50%" align="right"><input type="checkbox"></td>
+<td width="50%" align="left">I Agree to all terms and conditions:</td>
+</tr>
+
+<tr>
+<td width="50%" align="right"><input type="reset"></td>
+<td width="50%" align="left"><input type="submit"></td>
+</tr>
+</table>
+</fieldset>
+</form>
+</body>
+
+
+</html>
