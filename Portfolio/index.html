@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<meta charset="uft-8">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+    
+<nav>
+<ul class="nav" id="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#aboutsection">About Me</a></li>
+    <li><a href="#Skillssection">Skills</a></li>
+  <li><a href="#worksection">Work</a></li>
+   <li><a href="#contactsection">Contact</a></li>
+  <li style="float:right"><audio controls>
+ <source src="turnupthemusic.mp3" type="audio/mpeg">
+      </audio>
+  
+</ul>
+</nav>
+	
+<body>
+
+
+<section id="welcomesection"> 	
+	<h1> Welcome To my website </h1>
+    <p>IT Graduate From Coventry University</p>
+    
+</section>
+    
+<section id="aboutsection"> 	
+	<h1> About Me</h1>
+    
+    <img width="auto" height="250" src="images/jamie.jpg">
+        
+	<p>A recent Information Technology Practitioner graduate from Coventry University whose thorough and precise approach to projects/education has yielded excellent results. I have benefited from work experience which has enabled me to gain valuable skills such as excellent interpersonal skills, time management & problem solving skills. I am currently looking for a software developer opportunity that will allow me to enhance my programming skills alongside an expert team of developers. In order to become a Junior or mid-level developer in the future. </p>
+    
+    <p> I enjoy listening to music such as Rnb, Hip Hop and Grime. In my spare time I like to keep healthly by attending Gym and playing football. I enjoy travelling around the world and learning about new cultures and backgrounds.</p>
+    
+    <a href="Jamie Ajibade's Information Technology CV.docx">Jamie Ajibade's IT CV</a>
+</section>
+    
+    <section id="Skillssection">
+        
+    <h1>IT Skills</h1>
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">70%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">60%</div>
+</div>
+
+<p>Javascript</p>
+<div class="container">
+  <div class="skills js">40%</div>
+</div>
+        
+<p>Java</p>
+<div class="container">
+  <div class="skills java">40%</div>
+</div>
+
+<p>MYSQL</p>
+<div class="container">
+  <div class="skills sql">40%</div>
+</div>
+
+</section>
+    
+    <div class="worksectionImg" id="worksection"> 	
+	<h1> Work </h1>
+        <a href ="C:\Users\Jamie\Documents\Portfolio\Holiday-20170302T140733Z-001.ZIP"> <img class="demo" width="250" height="300" src="C:\Users\Jamie\Documents\Portfolio\images\Capture1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"></a>
+    
+        <a href ="C:\Users\Jamie\Documents\Portfolio\HTML-20170302T134802Z-001.ZIP"> <img class="demo" width="250" height="300" src="C:\Users\Jamie\Documents\Portfolio\images\Capture3.jpg"onclick="openModal();currentSlide(2)" class="hover-shadow"></a>
+        
+         <a href ="C:\Users\Jamie\Documents\Portfolio\Personal HTML Portfolio-20170302T141541Z-001.ZIP"> <img class="demo" width="250" height="300" src="C:\Users\Jamie\Documents\Portfolio\images\Capture4.jpg"onclick="openModal();currentSlide(3)" class="hover-shadow"></a>
+        
+        <img class="demo" width="250" height="300" src="C:\Users\Jamie\Documents\Portfolio\images\app.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        
+       <img class="demo" width="250" height="300" src="C:\Users\Jamie\Documents\Portfolio\images\MTACer.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        
+        <iframe src="https://www.youtube.com/embed/nCDdHbUkRLk?ecver=2" width="260" height="310" frameborder="0" style="width:;height:%;left:0" allowfullscreen=""></iframe>
+        
+        <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+      
+      <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+        <img src="C:\Users\Jamie\Documents\Portfolio\images\Capture1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+        <img src="C:\Users\Jamie\Documents\Portfolio\images\Capture3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+        <img src="C:\Users\Jamie\Documents\Portfolio\images\Capture4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+        <img src="C:\Users\Jamie\Documents\Portfolio\images\app.png" style="width:100%">
+    </div>
+      
+      <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+        <img src="C:\Users\Jamie\Documents\Portfolio\images\MTACer.jpg" style="width:100%">
+    </div>
+      
+      <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <iframe src="https://www.youtube.com/embed/nCDdHbUkRLk?ecver=2" width="260" height="310" frameborder="0" style="width:100%" allowfullscreen=""></iframe> 
+    </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+<section id="contactsection"> 	
+
+<form>
+<fieldset>
+<legend> Contact Me</legend>
+
+<div>
+<table width="100%">
+<tr>
+<td width="50%" align="right">Forename: </td>
+<td width="50%" align="left"><input type="text" required="required"></td>
+</tr>
+
+<tr>
+<td width="50%" align="right">Surname:</td>
+<td width="50%" align="left"><input type="text" required="required"></td>
+</tr>
+
+<tr>
+<td width="50%" align="right">Email:</td>
+<td width="50%" align="left"><input type="email" required="required"></td>
+</tr>
+
+
+<tr>
+<td width="50%" align="right">Contact Number:</td>
+<td width="50%" align="left"><input type="text" min="1" max="11" required="required"></td>
+</tr>
+
+
+<tr>
+<td width="50%" align="right">Delivery Instructions</td>
+<td width="50%" align="left"><textarea rows="6"></textarea></td>
+</tr>
+
+
+<tr>
+<td width="50%" align="right"><input type="reset"></td>
+<td width="50%" align="left"><input type="submit"></td>
+</tr>
+</table>
+
+
+</div>
+
+</fieldset>
+
+    </form>
+    
+   </section>
+    
+    
+    <footer id="footer">
+    
+    Jamie Ajibade 2017 Portfolio &copy; 
+        
+        <div class="footer">
+   
+            
+        
+            <a href ="https://jajibade1.wordpress.com/"> <img width="50" height="50" src="https://s1.wp.com/i/favicons/android-chrome-192x192.png" alt="WordPress"></a>
+        
+        <a href ="https://www.linkedin.com/in/jamie-ajibade-300358106/"> <img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="WordPress"></a>
+            
+            <a href ="https://github.com/jajibade1/websites"> <img width="50" height="50" src="https://image.freepik.com/free-icon/github-logo-in-a-rounded-square_318-40761.jpg"></a>
+            
+             <a href ="https://www.youtube.com/channel/UCADihwOjQma1uJ5-SR9a_PQ"> <img width="50" height="50" src="http://diylogodesigns.com/blog/wp-content/uploads/2016/05/best-quality-youtube-logo-download-png-format.png"></a>
+            
+             <a href ="https://plus.google.com/u/0/"> <img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Google_plus.svg/2000px-Google_plus.svg.png"></a>
+            
+            
+    
+  </div>
+
+    </footer>
+                                                    
+    </body>
+    
+    
+</html>
